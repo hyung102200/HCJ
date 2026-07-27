@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>권우형의 이력서</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span class="glow glow--gold"></span>
+      <span class="glow glow--rose"></span>
+      <span class="glow glow--gold-soft"></span>
+    </div>
+
+    <nav class="topnav" id="topnav">
+      <div class="nav-inner">
+        <a href="#my_info" class="nav-logo">권우형</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-right" id="navMenu">
+          <ul class="nav-menu">
+            <li><a href="#about" data-nav>About</a></li>
+            <li><a href="#education" data-nav>Education</a></li>
+            <li><a href="#contact" data-nav>Contact</a></li>
+            <li><a href="#skill" data-nav>Skills</a></li>
+            <li><a href="#project" data-nav>Projects</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <div class="lang-switch" role="group" aria-label="언어 선택">
+              <button class="lang-btn" data-lang="ko">KO</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+              <button class="lang-btn" data-lang="ja">JP</button>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="테마 전환">🌙</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <h1>권우형의 이력서</h1>
+
+      <section id="my_info">
+        <h2>My info</h2>
+        <div class="photo-frame">
+          <img src="images/profile.png" alt="권우형의 얼굴 사진" />
+          <span class="sticky-note" data-i18n="stickyNote">안녕하세요 :)</span>
+        </div>
+        <table>
+          <tbody>
+            <tr id="myname">
+              <th>이름</th>
+              <td>권우형</td>
+            </tr>
+            <tr>
+              <th data-i18n="labelJob">직업</th>
+              <td data-i18n="valueJob">학생</td>
+            </tr>
+            <tr>
+              <th data-i18n="labelAge">나이</th>
+              <td>26</td>
+            </tr>
+            <tr>
+              <th data-i18n="labelLocation">거주지</th>
+              <td data-i18n="valueLocation">부산</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p class="typed-line">
+          <span id="typedText"></span><span class="typed-cursor" aria-hidden="true"></span>
+        </p>
+        <p data-i18n="aboutBody">
+          안녕하세요! 오류 메시지를 보면 당황하기보다 구글을 먼저 켜는 개발자
+          권우형입니다. 코드는 한 번에 성공하는 것보다 여러 번 실패하면서 배우는
+          게 더 재밌다고 생각합니다. 새로운 기술을 익히는 걸 좋아하고, "이거
+          가능할까?"라는 생각이 들면 일단 만들어보는 편입니다. 언젠가는 버그보다
+          기능이 더 많은 프로그램을 만드는 것이 목표입니다.
+        </p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ol class="edu-list">
+          <li>
+            <div class="edu-head">
+              <h3 data-i18n="eduSchool1">경성대학교</h3>
+              <span class="edu-status" data-i18n="eduStatus1">재학중</span>
+            </div>
+            <p class="edu-sub" data-i18n="eduSub1">학부 과정</p>
+          </li>
+          <li>
+            <div class="edu-head">
+              <h3 data-i18n="eduSchool2">K-Move 일본과정</h3>
+              <span class="edu-status" data-i18n="eduStatus2">수강중</span>
+            </div>
+            <p class="edu-sub" data-i18n="eduSub2">해외 취업 연수 프로그램</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            <a href="tel:01047310739">010-4731-0739</a>
+          </li>
+          <li>
+            <a href="mailto:hyung102200@naver.com" target="_blank"
+              >hyung102200@naver.com</a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com/hyung102200" target="_blank"
+              >@myinstagram</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/hyung102200" target="_blank"
+              >@mygithub</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="skill">
+        <h2>Skills</h2>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java</li>
+          <li>Javascript</li>
+          <li>Python</li>
+          <li>MySQL</li>
+        </ol>
+      </section>
+
+      <section id="project">
+        <h2>Projects</h2>
+        <ol>
+          <li>
+            <h3 data-i18n="proj1Title">재밌는 앱</h3>
+            <video src="dbtest.mp4" width="1080" height="720" controls></video>
+            <p data-i18n="proj1Body">
+              캡스톤 디자인 수업에서 진행한 프로젝트로, 데이터베이스 연동 및 CRUD 기능을 테스트한 영상입니다.
+            </p>
+          </li>
+          <li>
+            <h3 data-i18n="proj2Title">더 재밌는 사이트</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/s8cP1Vt5US8?si=K1mxxgV7ItZ4fGV8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p data-i18n="proj2Body">
+              그냥 재미로 올려본 영상입니다. 가끔은 코드보다 이런 게 더 힐링이 되더라고요.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <p data-i18n="footerTagline">버그보다 기능이 많은 그날까지.</p>
+      <p class="footer-meta">
+        <span>© 2026 권우형</span>
+        <span class="dot">·</span>
+        <span data-i18n="footerUpdated">최종 업데이트: 2026.07</span>
+      </p>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="맨 위로 이동">↑</button>
+
+    <script>
+      /* ---------------- 다국어 텍스트 ---------------- */
+      const translations = {
+        ko: {
+          stickyNote: '안녕하세요 :)',
+          labelJob: '직업',
+          valueJob: '학생',
+          labelAge: '나이',
+          labelLocation: '거주지',
+          valueLocation: '부산',
+          typed: '안녕하세요, 개발자 권우형입니다.',
+          aboutBody:
+            '안녕하세요! 오류 메시지를 보면 당황하기보다 구글을 먼저 켜는 개발자 권우형입니다. 코드는 한 번에 성공하는 것보다 여러 번 실패하면서 배우는 게 더 재밌다고 생각합니다. 새로운 기술을 익히는 걸 좋아하고, "이거 가능할까?"라는 생각이 들면 일단 만들어보는 편입니다. 언젠가는 버그보다 기능이 더 많은 프로그램을 만드는 것이 목표입니다.',
+          eduSchool1: '경성대학교',
+          eduStatus1: '재학중',
+          eduSub1: '학부 과정',
+          eduSchool2: 'K-Move 일본과정',
+          eduStatus2: '수강중',
+          eduSub2: '해외 취업 연수 프로그램',
+          catFrontend: '프론트엔드',
+          catBackend: '백엔드 / 언어',
+          catDatabase: '데이터베이스',
+          proj1Title: '재밌는 앱',
+          proj1Body:
+            '캡스톤 디자인 수업에서 진행한 프로젝트로, 데이터베이스 연동 및 CRUD 기능을 테스트한 영상입니다.',
+          proj2Title: '더 재밌는 사이트',
+          proj2Body:
+            '그냥 재미로 올려본 영상입니다. 가끔은 코드보다 이런 게 더 힐링이 되더라고요.',
+          footerTagline: '버그보다 기능이 많은 그날까지.',
+          footerUpdated: '최종 업데이트: 2026.07',
+        },
+        en: {
+          stickyNote: 'Hi there :)',
+          labelJob: 'Occupation',
+          valueJob: 'Student',
+          labelAge: 'Age',
+          labelLocation: 'Location',
+          valueLocation: 'Busan',
+          typed: "Hello, I'm developer Kwon Woohyeong.",
+          aboutBody:
+            "Hi! I'm Kwon Woohyeong, a developer who opens Google before panicking over error messages. I think coding is more fun when you learn through repeated failure rather than succeeding on the first try. I enjoy picking up new technologies, and when I wonder \"could this be possible?\" I usually just try building it. Someday my goal is to build a program with more features than bugs.",
+          eduSchool1: 'Kyungsung University',
+          eduStatus1: 'Currently enrolled',
+          eduSub1: 'Undergraduate program',
+          eduSchool2: 'K-Move Japan Program',
+          eduStatus2: 'In progress',
+          eduSub2: 'Overseas employment training program',
+          catFrontend: 'Frontend',
+          catBackend: 'Backend / Languages',
+          catDatabase: 'Database',
+          proj1Title: 'A Fun App',
+          proj1Body:
+            'A video from a capstone design course project, testing database integration and CRUD functionality.',
+          proj2Title: 'An Even More Fun Site',
+          proj2Body:
+            "Just a video I uploaded for fun. Sometimes this is more relaxing than writing code.",
+          footerTagline: 'Until the day features outnumber bugs.',
+          footerUpdated: 'Last updated: Jul 2026',
+        },
+        ja: {
+          stickyNote: 'こんにちは :)',
+          labelJob: '職業',
+          valueJob: '学生',
+          labelAge: '年齢',
+          labelLocation: '居住地',
+          valueLocation: '釜山',
+          typed: 'こんにちは、開発者のクォン・ウヒョンです。',
+          aboutBody:
+            'こんにちは。エラーメッセージを見て慌てるよりも先にGoogleを開く開発者、クォン・ウヒョンです。コードは一度で成功するよりも、何度も失敗しながら学ぶほうが楽しいと思っています。新しい技術を学ぶのが好きで、「これって可能かな?」と思ったら、とりあえず作ってみるタイプです。いつかバグより機能のほうが多いプログラムを作ることが目標です。',
+          eduSchool1: '慶星大学校',
+          eduStatus1: '在学中',
+          eduSub1: '学部課程',
+          eduSchool2: 'K-Move 日本コース',
+          eduStatus2: '受講中',
+          eduSub2: '海外就職研修プログラム',
+          catFrontend: 'フロントエンド',
+          catBackend: 'バックエンド / 言語',
+          catDatabase: 'データベース',
+          proj1Title: '楽しいアプリ',
+          proj1Body:
+            'キャップストーンデザインの授業で取り組んだプロジェクトで、データベース連携およびCRUD機能をテストした動画です。',
+          proj2Title: 'もっと楽しいサイト',
+          proj2Body:
+            '息抜きとしてアップした動画です。時々コードを書くよりも、こういうことのほうが癒やされます。',
+          footerTagline: 'バグより機能が多くなるその日まで。',
+          footerUpdated: '最終更新: 2026年7月',
+        },
+      };
+
+      let typingTimeoutId = null;
+
+      function typeText(text) {
+        const el = document.getElementById('typedText');
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        clearTimeout(typingTimeoutId);
+
+        if (prefersReduced) {
+          el.textContent = text;
+          return;
+        }
+
+        el.textContent = '';
+        let i = 0;
+        const type = () => {
+          if (i <= text.length) {
+            el.textContent = text.slice(0, i);
+            i++;
+            typingTimeoutId = setTimeout(type, 55);
+          }
+        };
+        type();
+      }
+
+      function applyLanguage(lang) {
+        const dict = translations[lang] || translations.ko;
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) {
+            el.textContent = dict[key];
+          }
+        });
+        typeText(dict.typed);
+
+        document.querySelectorAll('.lang-btn').forEach((btn) => {
+          btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+
+        document.documentElement.lang = lang;
+        localStorage.setItem('resume-lang', lang);
+      }
+
+      document.querySelectorAll('.lang-btn').forEach((btn) => {
+        btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+      });
+
+      const savedLang = localStorage.getItem('resume-lang') || 'ko';
+      applyLanguage(savedLang);
+
+      /* ---------------- 다크 / 라이트 모드 ---------------- */
+      const themeToggle = document.getElementById('themeToggle');
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        themeToggle.textContent = theme === 'light' ? '☀️' : '🌙';
+        localStorage.setItem('resume-theme', theme);
+      }
+
+      const savedTheme =
+        localStorage.getItem('resume-theme') ||
+        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      applyTheme(savedTheme);
+
+      themeToggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        applyTheme(current === 'light' ? 'dark' : 'light');
+      });
+
+      /* ---------------- 모바일 메뉴 토글 ---------------- */
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('open');
+        navToggle.classList.toggle('open', isOpen);
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      document.querySelectorAll('[data-nav]').forEach((link) => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+          navToggle.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', false);
+        });
+      });
+
+      /* ---------------- 스크롤: 현재 섹션 강조 / 헤더 그림자 ---------------- */
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('[data-nav]');
+      const topnav = document.getElementById('topnav');
+      const toTopBtn = document.getElementById('toTop');
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const id = entry.target.getAttribute('id');
+            const link = document.querySelector(`[data-nav][href="#${id}"]`);
+            if (!link) return;
+            if (entry.isIntersecting) {
+              navLinks.forEach((l) => l.classList.remove('active'));
+              link.classList.add('active');
+            }
+          });
+        },
+        { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+      );
+      sections.forEach((s) => observer.observe(s));
+
+      /* ---------------- 스크롤 등장 애니메이션 ---------------- */
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      document.querySelectorAll('section').forEach((s) => revealObserver.observe(s));
+
+      /* ---------------- 스크롤 시 헤더 / 맨위로 버튼 ---------------- */
+      window.addEventListener('scroll', () => {
+        topnav.classList.toggle('scrolled', window.scrollY > 10);
+        toTopBtn.classList.toggle('visible', window.scrollY > 400);
+      });
+
+      toTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+  </body>
+</html>
